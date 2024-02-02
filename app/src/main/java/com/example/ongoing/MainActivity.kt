@@ -51,72 +51,8 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             OngoingTheme {
-
-
-                Text(text ="Ongoing Camps",
-                    fontWeight = FontWeight.Bold,
-                    fontSize = 25.sp,
-                    fontStyle = FontStyle.Italic)
-                Icon(Icons.Rounded.AccountCircle,
-                    contentDescription = null,
-                    modifier = Modifier
-                        .offset(x = 370.dp, y = 45.dp)
-                        .clickable { })
-                Box(contentAlignment = androidx.compose.ui.Alignment.TopCenter) {
-                    Image(
-                        painter = painterResource(id = R.drawable.abc),
-                        contentDescription = null,
-                        contentScale = ContentScale.Fit,
-
-                        modifier = Modifier
-                            .size(420.dp)
-                            .padding(10.dp)
-                    )
-
-
-                }
-                Text(text ="Title",
-                    fontWeight = FontWeight.Bold,
-                    fontSize = 25.sp,
-                    fontStyle = FontStyle.Italic,
-                    modifier = Modifier
-                        .offset(x=10.dp,y=340.dp))
-
-                Text(text ="Discription",
-                    fontWeight = FontWeight.SemiBold,
-                    fontSize = 20.sp,
-                    fontStyle = FontStyle.Italic,
-                    modifier = Modifier
-                        .offset(x=10.dp,y=370.dp))
-                Divider(color = Color.Black, modifier = Modifier
-                    .fillMaxWidth()
-                    .width(1.dp)
-                    .offset(y = 400.dp))
-
-
-                Image(
-                    painter = painterResource(id = R.drawable.abc),
-                    contentDescription = null,
-                    contentScale = ContentScale.Fit,
-
-                    modifier = Modifier
-                        .size(420.dp)
-                        .padding(10.dp)
-                )
-
-
-
-
-
-
-
-
-
-
-
+                OngoingScreen()
             }
         }
     }
-
-
 }
